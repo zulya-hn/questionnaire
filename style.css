@@ -1,0 +1,138 @@
+body {
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+}
+
+.question-container {
+    color: white;
+    margin: 5px auto 0;
+    text-align: center;
+    height: auto;
+    width: 600px;
+    min-height: 400px;
+    background: linear-gradient(135deg, #064EE3 0%, #EC49F2 100%);
+    top: 40%;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.voting-header {
+    margin: 75px 0 55px;
+    position: relative;
+}
+
+.voting-question {
+    color: white;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-weight: 900;
+    line-height: 34px;
+    max-height: 102px;
+    font-size: 30px;
+}
+
+.voting-options {
+    padding: 0 30px;
+    position: relative;
+}
+
+.voting-option-container {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.voting-option-container:hover {
+    background: rgb(255 255 255 / 30%);
+
+}
+
+.voting-option-text {
+    padding: 6px 10px 8px;
+    line-height: 16px;
+    font-size: 14px;
+    color: white;
+    min-width: 0;
+    box-sizing: border-box;
+    z-index: 300;
+    text-align: left;
+}
+
+.voting-option-count {
+    white-space: nowrap;
+}
+
+.voting-option-counter {
+    color: #e0dceaba;
+    display: none;
+    z-index: 100;
+}
+
+.voting-option-count .voting-option-counter {
+    position: absolute;
+    display: inline-block;
+    user-select: none;
+    pointer-events: none;
+}
+
+.voting-separator {
+    content: '\a0';
+    color: #e0dceaba;
+    display: none;
+    z-index: 100;
+}
+
+.voting-separator:after, .voting-separator:before {
+    content: '\a0';
+}
+
+.voting-option-percent {
+    display: none;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    padding: 6px 10px 8px 0;
+    text-align: right;
+    right: 0;
+}
+
+.voting-option-percent:after {
+    content: ' %';
+}
+
+.voting-option-voted.voting-option-percent:before {
+    margin-right: 4px;
+    background: url(img/voting.svg) 0 -79px;
+}
+
+.voting-option-voted.voting-option-percent:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+}
+
+.voting-footer {
+    margin: 70px auto 30px;
+}
+
+.progress {
+    height: 30px;
+    background: rgb(255 255 255 / 10%);
+}
+
+.progress-bar {
+    height: 30px;
+    background: rgb(255 255 255 / 30%);
+    transition: .8s linear;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+
+}
